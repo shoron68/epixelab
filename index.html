@@ -1,0 +1,442 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <style>
+        .roboto {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .dm-sans {
+            font-family: "DM Sans", sans-serif;
+        }
+
+        .font-abel {
+            font-family: 'Abel', sans-serif;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="max-w-[1170px] mx-auto">
+    <!--header section-->
+    <header class="py-4 md:mx-0 mx-[20px]">
+        <div class="flex justify-between items-center">
+            <div>
+                <img src="./assets/Logo.png" alt="Logo" class="h-10">
+            </div>
+
+            <nav class="hidden md:flex gap-x-[48px]">
+                <a href="#" class="text-[18px] font-medium text-[#000000]">Home</a>
+                <a href="#" class="text-[18px] font-medium text-[#000000]">About Us</a>
+                <a href="#" class="text-[18px] font-medium text-[#000000]">Our App</a>
+                <a href="#" class="text-[18px] font-medium text-[#000000]">Contacts</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-x-[20px]">
+                <button
+                    class="text-[18px] font-medium text-[#000000] py-[10px] px-[20px] hover:bg-[#FF6600] hover:text-white rounded-[10px] duration-300">
+                    Log in
+                </button>
+                <button
+                    class="text-[18px] font-medium text-white py-[10px] px-[20px] bg-[#FF6600] rounded-[10px] hover:bg-[#FF8432] duration-300">
+                    Sign up
+                </button>
+            </div>
+
+            <div class="md:hidden">
+                <input type="checkbox" id="menu-toggle" class="peer hidden">
+                <label for="menu-toggle" class="cursor-pointer">
+                    <div class="space-y-1.5">
+                        <span class="block w-6 h-0.5 bg-black"></span>
+                        <span class="block w-6 h-0.5 bg-black"></span>
+                        <span class="block w-6 h-0.5 bg-black"></span>
+                    </div>
+                </label>
+                <div
+                    class="absolute duration-700 left-0 top-[70px] w-full bg-white shadow-md hidden flex-col items-center gap-6 py-6 peer-checked:flex">
+                    <a href="#" class="text-[18px] font-medium text-[#000000]">Home</a>
+                    <a href="#" class="text-[18px] font-medium text-[#000000]">About Us</a>
+                    <a href="#" class="text-[18px] font-medium text-[#000000]">Our App</a>
+                    <a href="#" class="text-[18px] font-medium text-[#000000]">Contacts</a>
+                    <button
+                        class="text-[18px] font-medium text-[#000000] py-[10px] px-[20px] hover:bg-[#FF6600] hover:text-white rounded-[10px] duration-300">
+                        Log in
+                    </button>
+                    <button
+                        class="text-[18px] font-medium text-white py-[10px] px-[20px] bg-[#FF6600] rounded-[10px] hover:bg-[#FF8432] duration-300">
+                        Sign up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Banner Section -->
+    <div class="lg:mt-[114px] mt-[60px] md:mx-0 mx-[20px]">
+        <div class="md:flex">
+            <div class="md:w-[50%]">
+                <h1
+                    class="md:text-[70px] text-[50px] text-[#0B1B35] md:text-start text-center font-semibold md:font-bold">
+                    We boost<br class="md:block hidden" />
+                    growth for your <br class="md:block hidden" />statup business</h1>
+                <p class="text-[#000000] md:text-[22px] text-[18px] font-medium md:text-start text-center">Our goal is
+                    top at the heart of creativity
+                    services<br class="md:block hidden" /> industry as a digital creator. In has a after<br
+                        class="md:block hidden" /> comment
+                <p>
+                <div class="flex md:mt-[66px] mt-[30px] gap-x-[28px] items-center">
+                    <a href="#"
+                        class="md:text-[18px] text-[16px] md:font-medium font-normal text-[#000000] py-[11px] md:px-[34px] px-[20px] bg-[#FF6600]  text-[#fff] hover:bg-[#FF8432] duration-300 rounded-[10px] duration-300">
+                        Get Started</a>
+                    <a href=""><img src="./assets/learn.png" alt=""></a>
+                </div>
+            </div>
+            <div class="md:w-[50%] md:mt-0 mt-[30px]">
+                <div class="w-full">
+                    <img src="./assets/bannerimg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service section -->
+    <div class="md:mt-[81px] mt-[40px] md:mx-0 mx-[20px]">
+        <div class="">
+            <h3 class="text-[14px] font-abel text-[#8A898E] uppercase tracking-[8px] text-center">service</h3>
+            <h4
+                class="md:text-[52px] text-[40px] text-[#0B1B35] font-abel uppercase md:leading-[28px] tracking-[2px] text-center md:mt-[20px]">
+                Our Vison & Our Goal</h4>
+        </div>
+        <div class="md:mt-[108px] mt-[50px]">
+            <div class="md:flex justify-between">
+                <div class="md:w-[352px] bg-[#fff] rounded-[20px] shadow-xl ">
+                    <div class="flex justify-center md:mt-[30px] pt-[30px] lg:pt-0">
+                        <img src="./assets/Vector.png" alt="">
+                    </div>
+                    <div class="md:mt-[41px] mt-[20px]">
+                        <h2 class="md:text-[36px] text-[30px] font-abel text-[#000000] leading-[28px] text-center">
+                            Graphic Design</h2>
+                        <p
+                            class="md:text-[18px] text-[16px] font-abel text-[#000000] leading-[28px] text-center md:mt-[32px] mt-[10px] ">
+                            Lorem ipsum
+                            dolor sit amet,<br class="md:block hidden" /> consectetur adipiscing elit.<br
+                                class="md:block hidden" /> Quisque dui mi, bibendum eu<br class="md:block hidden" />
+                            erat id, ultricies semper<br class="md:block hidden" /> metus. Nunc dapibus laoreet<br
+                                class="md:block hidden" /> dolor nec imperdiet.</p>
+                    </div>
+                    <div class="flex justify-center mt-[18px] md:pb-0 pb-[30px] ">
+                        <button
+                            class="py-[10px] px-[24px] bg-[#FF6600] rounded-[10px] text-[#fff] hover:bg-[#FF8432] duration-300">Learn
+                            More</button>
+                    </div>
+                </div>
+
+                <div class="md:w-[352px] bg-[#fff] rounded-[20px] shadow-xl md:my-0 my-[20px] ">
+                    <div class="flex justify-center md:mt-[30px] pt-[30px] lg:pt-0">
+                        <img src="./assets/Video.png" alt="">
+                    </div>
+                    <div class="md:mt-[41px] mt-[20px]">
+                        <h2 class="md:text-[36px] text-[30px] font-abel text-[#000000] leading-[28px] text-center">
+                            Graphic Design</h2>
+                        <p
+                            class="md:text-[18px] text-[16px] font-abel text-[#000000] leading-[28px] text-center md:mt-[32px] mt-[10px]">
+                            Lorem ipsum
+                            dolor sit amet,<br class="md:block hidden" /> consectetur adipiscing elit.<br
+                                class="md:block hidden" /> Quisque dui mi, bibendum eu<br class="md:block hidden" />
+                            erat id, ultricies semper<br class="md:block hidden" /> metus. Nunc dapibus laoreet<br
+                                class="md:block hidden" /> dolor nec imperdiet.</p>
+                    </div>
+                    <div class="flex justify-center mt-[18px] md:pb-0 pb-[30px] ">
+                        <button
+                            class="py-[10px] px-[24px] bg-[#FF6600] rounded-[10px] text-[#fff] hover:bg-[#FF8432] duration-300">Learn
+                            More</button>
+                    </div>
+                </div>
+
+                <div class="md:w-[352px] bg-[#fff] rounded-[20px] shadow-xl md:my-0 my-[20px]  ">
+                    <div class="flex justify-center md:mt-[30px] pt-[30px] lg:pt-0">
+                        <img src="./assets/Chart.png" alt="">
+                    </div>
+                    <div class="md:mt-[41px] mt-[20px]">
+                        <h2 class="md:text-[36px] text-[30px] font-abel text-[#000000] leading-[28px] text-center">
+                            Graphic Design</h2>
+                        <p
+                            class="md:text-[18px] text-[16px] font-abel text-[#000000] leading-[28px] text-center md:mt-[32px] mt-[10px]">
+                            Lorem ipsum
+                            dolor sit amet,<br class="md:block hidden" /> consectetur adipiscing elit.<br
+                                class="md:block hidden" /> Quisque dui mi, bibendum eu<br class="md:block hidden" />
+                            erat id, ultricies semper<br class="md:block hidden" /> metus. Nunc dapibus laoreet<br
+                                class="md:block hidden" /> dolor nec imperdiet.</p>
+                    </div>
+                    <div class="flex justify-center mt-[18px] md:pb-0 pb-[30px] ">
+                        <button
+                            class="py-[10px] px-[24px] bg-[#FF6600] rounded-[10px] text-[#fff] hover:bg-[#FF8432] duration-300">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Components Section -->
+    <div class="md:mt-[181px] mt-[60px] md:mx-0 mx-[20px]">
+        <div class="md:flex justify-between">
+            <div class="">
+                <h4 class="text-[22px] text-[#1E0E62] leading-[32px] md:text-start text-center dm-sans">Many Blocks
+                    and<br />Components</h4>
+                <p
+                    class="text-[16px] text-gray-500 leading-[26px] dm-sans md:mt-[41px] mt-[20px] md:text-start text-center">
+                    Startup Framework contains
+                    components<br /> and complex blocks which can easily be<br /> integrated into almost any design.
+                </p>
+                <div class="lg:mt-[151px] mt-[30px] flex justify-center md:justify-normal">
+                    <button
+                        class="relative overflow-hidden text-[16px] text-[#1E0E62] dm-sans leading-[22px] py-[13px] px-[38px] font-semibold rounded-[30px] border border-[#1E0E62] duration-300 z-10 before:content-[''] before:absolute before:inset-0 before:w-0 before:bg-[#1E0E62] before:transition-all before:duration-700 before:rounded-[30px] hover:before:w-full hover:text-white">
+                        <span class="relative z-10">Explore</span>
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-[687px] md:h-[385px] md:mt-0 mt-[40px]">
+                <img src="./assets/Photo.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- testimonial Section -->
+    <div class="md:mt-[146px] mt-[60px] md:mx-0 mx-[20px]">
+        <div class="">
+            <h3 class="text-[14px] font-abel text-[#8A898E] uppercase tracking-[8px] text-center">TESTMONIALS</h3>
+            <h4
+                class="md:text-[52px] text-[40px] text-[#0B1B35] font-abel uppercase md:leading-[28px] tracking-[2px] text-center mt-[20px]">
+                What Clients say about us</h4>
+        </div>
+        <div class="md:flex md:mt-[100px] mt-[50px] justify-between">
+            <div class="md:flex gap-x-[40px]">
+                <div class="flex justify-center md:justify-normal">
+                    <img src="./assets/Userpic.png" class="w-[100px] h-[100px]" alt="">
+                </div>
+                <div class="">
+                    <p class="text-[18px] font-medium md:text-start text-center text-[#0B1B35] leading-[28px] dm-sans">
+                        Get a fully retina ready
+                        site when<br /> you build with Startup Framework.<br /> Websites look sharper and more<br />
+                        gorgeous on devices with retina<br /> display support</p>
+                    <p
+                        class="text-[18px] font-medium text-gray-500 uppercase leading-[28px] md:text-start text-center mt-[13px]">
+                        Rayhan Curran
+                    </p>
+                </div>
+            </div>
+
+            <div class="md:flex gap-x-[40px] md:my-0 my-[30px]">
+                <div class="flex justify-center md:justify-normal">
+                    <img src="./assets/Userpic2.png" class="w-[100px] h-[100px]" alt="">
+                </div>
+                <div class="">
+                    <p class="text-[18px] font-medium md:text-start text-center text-[#0B1B35] leading-[28px] dm-sans">
+                        As a business targeting
+                        high net<br /> worth individuals, we were looking<br /> for a slick, cool and
+                        mini-malistic<br /> design for our website</p>
+                    <p
+                        class="text-[18px] font-medium text-gray-500 uppercase leading-[28px] md:text-start text-center mt-[13px]">
+                        Kayley Frame</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="md:flex md:mt-[100px] mt-[50px]  justify-between">
+            <div class="md:flex gap-x-[40px] ">
+                <div class="flex justify-center md:justify-normal">
+                    <img src="./assets/Mask.png" class="w-[100px] h-[100px]" alt="">
+                </div>
+                <div class="">
+                    <p class="text-[18px] font-medium text-[#0B1B35] leading-[28px] dm-sans md:text-start text-center">
+                        The most important part of
+                        the<br /> Startup Framework is the samples</p>
+                    <p
+                        class="text-[18px] font-medium text-gray-500 uppercase leading-[28px] md:mt-[97px] md:text-start text-center mt-[15px]">
+                        Gene Whitfield
+                    </p>
+                </div>
+            </div>
+            <div class="md:flex gap-x-[40px] md:mt-0 mt-[20px] ">
+                <div class="flex justify-center md:justify-normal">
+                    <img src="./assets/Mask (1).png" class="w-[100px] h-[100px]" alt="">
+                </div>
+                <div class="">
+                    <p class="text-[18px] font-medium text-[#0B1B35] leading-[28px] dm-sans md:text-start text-center">
+                        I’ve built my website with
+                        Startup<br /> just in one day, and it was ready<br/>to-go.</p>
+                    <p class="text-[18px] font-medium text-gray-500 uppercase leading-[28px] md:mt-[97px] md:text-start text-center mt-[15px]">Allan Kim</p>
+                </div>
+            </div>
+
+            <!-- <div class="md:flex md:mt-[100px] mt-[50px] md:w-[430px]">
+                <div class="flex justify-center md:justify-normal">
+                    <img src="./assets/Mask (1).png" class="w-[120px] h-[100px]" alt="">
+                </div>
+                <div class="">
+                    <p class="text-[18px] font-medium text-[#0B1B35] leading-[28px] dm-sans md:text-start text-center">
+                        I’ve built my website with
+                        Startup<br /> just in one day, and it was ready-to-go. </p>
+                    <p
+                        class="text-[18px] font-medium text-gray-500 uppercase leading-[28px] md:mt-[97px] md:text-start text-center mt-[15px]">
+                        Allan Kim</p>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+    <!-- team Section -->
+    <div class="md:mt-[165px] md:mx-0 mx-[20px]">
+
+        <div class="">
+            <h3 class="text-[14px] font-abel text-[#8A898E] uppercase tracking-[8px] text-center">OUR TEAM</h3>
+            <h4
+                class="md:text-[52px] text-[40px] text-[#0B1B35] font-abel uppercase leading-[28px] tracking-[2px] text-center mt-[20px]">
+                Meet The Team</h4>
+        </div>
+        <div class="lg:flex justify-between mt-[53px]">
+            <div
+                class="md:w-[370px] md:h-[370px] bg-white border-[2px] border-gray-350 rounded-xl shadow-md flex flex-col items-center justify-center">
+
+                <div class="mt-[50px]">
+                    <img src="./assets/Maskt.png" alt="Profile" class="w-28 h-28 rounded-full object-cover mb-6">
+                </div>
+
+                <div class="mt-[28px]">
+                    <h2 class="text-[22px] font-semibold dm-sans text-[#1E0E62]">Vanessa Laird</h2>
+                </div>
+
+                <p class="text-gray-400 dm-sans tracking-[2px] uppercase mt-2 text-sm font-medium">
+                    UI Designer
+                </p>
+                <div class="grid grid-cols-3 w-full h-[80px] border-t-[2px] border-gray-350 mt-[35px]">
+                    <div class="border-r-[2px] border-gray-350"></div>
+                    <div class="border-r-[2px] border-gray-350"></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div
+                class="md:w-[370px] md:h-[370px] bg-white border-[2px] border-gray-350 rounded-xl shadow-md flex flex-col items-center justify-center md:my-0 my-[30px]">
+
+                <div class="mt-[50px]">
+                    <img src="./assets/Mask t(1).png" alt="Profile" class="w-28 h-28 rounded-full object-cover mb-6">
+                </div>
+
+                <div class="mt-[28px]">
+                    <h2 class="text-xl font-semibold text-[#1C1139]">Mason Campbell</h2>
+                </div>
+
+                <p class="text-gray-400 tracking-[2px] uppercase mt-2 text-sm font-medium">
+                    UI Designer
+                </p>
+                <div class="grid grid-cols-3 w-full h-[80px] border-t-[2px] border-gray-350 mt-[40px]">
+                    <div class="border-r-[2px] border-gray-350"></div>
+                    <div class="border-r-[2px] border-gray-350"></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div
+                class="md:w-[370px] md:h-[370px] bg-white border-[2px] border-gray-350 rounded-xl shadow-md flex flex-col items-center justify-center">
+
+                <div class="mt-[50px]">
+                    <img src="./assets/Mask t (2).png" alt="Profile" class="w-28 h-28 rounded-full object-cover mb-6">
+                </div>
+
+                <div class="mt-[28px]">
+                    <h2 class="text-xl font-semibold text-[#1C1139]">Irea Evans</h2>
+                </div>
+
+                <p class="text-gray-400 tracking-[2px] uppercase mt-2 text-sm font-medium">
+                    UI Designer
+                </p>
+                <div class="grid grid-cols-3 w-full h-[80px] border-t-[2px] border-gray-350 mt-[40px]">
+                    <div class="border-r-[2px] border-gray-350"></div>
+                    <div class="border-r-[2px] border-gray-350"></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- newsletter Section -->
+    <div class="mt-[110px] md:mx-0 mx-[20px]">
+        <div class="">
+            <h3 class="text-[14px] font-abel text-[#8A898E] uppercase tracking-[8px] text-center">OUR TEAM</h3>
+            <h4
+                class="md:text-[52px] text-[40px] text-[#0B1B35] font-abel uppercase md:leading-[28px] tracking-[2px] text-center mt-[20px]">
+                Subscribe Our Newsleter</h4>
+        </div>
+        <div class="md:mt-[101px] mt-[50px]">
+            <div class="md:flex gap-x-[49px] justify-between">
+                <div class="">
+                    <img src="./assets/mail icon.png" alt="">
+                </div>
+                <div class="mt-[30px]">
+                    <div class="">
+                        <p class="text-[18px] md:text-start text-center text-[#000000] leading-[28px] roboto">Lorem
+                            ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit, sed do eiusmod tempor<br /> incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam</p>
+                    </div>
+                    <div class="md:mt-[33px] mt-[25px]">
+                        <input type="text" placeholder="Your E-mail hare..."
+                            class="roboto md:py-[24px] py-[15px] w-full focus:outline-none border-[1px] border-gray-200 shadow-xl rounded-[49px] md:pl-[67px] pl-[20px]">
+                    </div>
+                    <div class="md:mt-[60px] mt-[30px]">
+                        <button
+                            class="py-[11px] bg-[#FF6600] w-full rounded-[10px] text-[#fff] hover:bg-[#FF8432] duration-300 ">Subscribe
+                            Our Newsletter</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <div class="md:mt-[166px] mt-[60px] md:mx-0 mx-[20px]">
+        <div class="md:flex py-[31px] border-b-[2px] border-gray-350">
+            <div class="flex justify-center md:justify-normal md:mb-0 mb-[20px]">
+                <img src="./assets/flogo.png" alt="">
+            </div>
+            <div class="md:ml-[90px]">
+                <p class="text-[#1E0E62] text-[16px] dm-sans leading-[26px] md:text-start text-center">© 2020 Epixelab.
+                    All rights reserved.</p>
+            </div>
+            <div class="md:ml-[230px] md:mt-0 mt-[30px]">
+                <ul class="flex flex-col items-center gap-y-[20px] md:flex-row md:gap-x-[39px]">
+                    <li><a href="#"
+                            class="text-[16px] leading-[26px] font-normal text-[#1E0E62] md:text-start text-center">Portfolio</a></li>
+                    <li><a href="#" class="text-[16px] leading-[26px] font-normal text-[#1E0E62] md:text-start text-center">How it
+                            Works</a></li>
+                    <li><a href="#"
+                            class="text-[16px] leading-[26px] font-normal text-[#1E0E62] md:text-start text-center">Pricing</a></li>
+                    <li><a href="#" class="text-[16px] leading-[26px] font-normal text-[#1E0E62] md:text-start text-center">About</a>
+                    </li>
+                    <li><a href="#" class="text-[16px] leading-[26px] font-normal text-[#1E0E62] md:text-start text-center">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="py-[40px]">
+            <p class="text-[16px] text-gray-500 dm-sans leading-[26px] md:text-start text-center ">Startup Framework contains components and
+                complex blocks which can easily be integrated into almost any design. </p>
+        </div>
+    </div>
+</body>
+
+</html>
